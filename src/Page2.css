@@ -1,0 +1,39 @@
+.object-background{
+
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top:100;
+    left:0;
+}
+.animation-object{
+    height: 500px;
+    width: 400px;
+    background-color: blue;
+    display: flex;
+    margin-left: 500px;
+    display: flex;
+    border-radius: 180px;
+}
+.moon{
+    position: fixed;
+    top:500px;
+    left:380px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 2rem 2rem 0 0  white;
+    animation: move 8s cubic-bezier(.05,.67,.66,.39);
+}
+@keyframes move {
+    0% { 
+        transform: rotate(0deg)  
+        translateX(0px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(180deg)  
+        translateX(-600px) rotate(-180deg); 
+    } 
+}

@@ -1,0 +1,15 @@
+.main-buuton{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:100;
+  left:0;
+  background-color: lightblue;
+}
+.open-button{
+  width: 100px;
+  height: 70px;
+  margin-top: 300px;
+}
