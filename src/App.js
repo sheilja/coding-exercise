@@ -18,6 +18,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Page1 />} />
           <Route path="page1" element={<Page1 />} />
           <Route path="page2" element={<Page2 />} />
           <Route path="*" element={<NoPage />} />

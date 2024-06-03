@@ -7,7 +7,7 @@ const Layout = () => {
       <nav className="navigationbar">
         <ul>
           <li>
-            <Link to="/page1">Page1</Link>
+            <Link className='link1' to="/page1">Page1</Link>
           </li>
           <li>
             <Link to="/page2">Page2</Link>

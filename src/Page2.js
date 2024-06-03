@@ -6,6 +6,7 @@ const Page2=()=>{
     <div className='object-background'>
         <div className='animation-object'>
             <div className='moon'></div>
+            <div className='sun'></div>
         </div>
     </div>)
 }

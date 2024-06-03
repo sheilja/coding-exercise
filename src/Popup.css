@@ -16,9 +16,13 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 10px red;
+    justify-content: center;
 }
 .close-button{
     background: pink;
+    align-self: center;
+    height: 50px;
+    width: 80px;
     margin-top: 25px;
     margin-left: 20px;
     margin-right: 20px;

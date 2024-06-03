@@ -16,7 +16,7 @@
     display: flex;
     display: flex;
     border-radius: 180px;
-    animation: change 8s;
+    animation: change 50s;
 }
 .moon{
     position:relative;
@@ -27,6 +27,18 @@
     border-radius: 50%;
     box-shadow: 2rem 2rem 0 0  white;
     animation: move 8s cubic-bezier(.05,.67,.66,.39);
+}
+.sun{
+    position:relative;
+    top:27rem;
+    left:-14rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background-color: white;
+    animation: move-sun 8s cubic-bezier(.05,.67,.66,.39);
+    animation-delay: 6s;
+    visibility: visible;
 }
 @keyframes move {
     0% { 
@@ -39,8 +51,35 @@
         translateX(-600px) rotate(-180deg); 
     } 
 }
+@keyframes move-sun {
+    0% { 
+        transform: rotate(0deg)  
+        translateX(0px) rotate(0deg); 
+        visibility: visible;
+    } 
+    25%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100% { 
+        visibility: visible;
+        transform: rotate(180deg)  
+        translateX(-600px) rotate(-180deg); 
+    } 
+}
 @keyframes change {
-    100%{
+    0%{
+        background-color: darkblue;
+    }
+    75%{
         background-color: #00001f;
+    }
+    50%{
+        background-image: linear-gradient(red, yellow);
+    }
+    100%{
+        background-image: linear-gradient(red, yellow);
     }
 }

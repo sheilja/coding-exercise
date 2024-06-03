@@ -15,7 +15,7 @@ const Popup = (props) =>{
     return <>
     <div className='popup-background'>
         <div className='popup'>
-            {data}
+            <div>{data}</div>
             <button className='close-button' onClick={props.onClose}>CLOSE</button>
         </div>
     </div></>
